@@ -30,10 +30,11 @@ Python scripts (.py):
 
 (7) fingerprint: script to calculate molecular fingerprints (Morgan fingerprints)
 
-(8) machine_learning_models: script to builds ML/DL models for regression (MR, kNN, SVR, RFR, DNN)
+(8) machine_learning_models: script to build ML/DL models for regression (MR, kNN, SVR, RFR, DNN)
 
 
 (9) Folders:
+	
 	- dataset: stores the compound potency dataset used in this analysis
 
 	- ccr_results : stores the CCR algorithm results
@@ -41,8 +42,9 @@ Python scripts (.py):
 	- regression_results: stores regression models predictions
 
 
-(10) analysis_env.yml provides the python enviroment used for this analysis.
+(10) Python environment:
 
+	- analysis_env.yml provides the python environment used for this analysis.
 
 
 Order of Jupyter notebook execution:
