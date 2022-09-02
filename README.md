@@ -1,4 +1,4 @@
-# Machine_learning_for_compound_potency_prediction
+# Machine learning for compound potency prediction
 
 --------------------- MACHINE and DEEP LEARNING SCRIPTS: GENERAL INFORMATION  ---------------------
 
