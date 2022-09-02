@@ -44,7 +44,7 @@ Python scripts (.py):
 
 (10) Python environment:
 
-	- analysis_env.yml provides the python environment used for this analysis.
+	- analysis_env.yml provides the python environment used for this analysis. (Requires instalation see below)
 
 
 Order of Jupyter notebook execution:
@@ -67,4 +67,19 @@ Python environment export:
 1. Open Anaconda command line
 
 2. Type 'conda env export ENVNAME>ENV.yml', where 'ENVNAME' is the desired environment and 'ENV' the full path to the yml file.
+
+
+Requirements:
+
+- python=3.9
+- scipy=1.8.1
+- numpy=1.22.4
+- scikit-learn==1.1.1
+- tensorflow==2.9.1
+- keras==2.9.0
+- rdkit==2022.3.3
+- cudatoolkit=11.2.2
+- dgl-cuda11.1=0.8.1
+- deepchem==2.6.1
+- tqdm=4.64.0
 
