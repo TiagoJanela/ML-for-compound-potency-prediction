@@ -55,11 +55,16 @@ Order of Jupyter notebook execution:
 
 
 
-Environment installation:
+Python environment installation:
 
 1. Open Anaconda command line
 
 2. Type 'conda env create -n ENVNAME --file ENV.yml', where 'ENVNAME' is the desired environment and 'ENV' the full path to the yml file.
 
 
+Python environment export:
+
+1. Open Anaconda command line
+
+2. Type 'conda env export ENVNAME>ENV.yml', where 'ENVNAME' is the desired environment and 'ENV' the full path to the yml file.
 
