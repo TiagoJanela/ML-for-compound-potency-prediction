@@ -44,7 +44,7 @@ Python scripts (.py):
 
 (10) Python environment:
 
-	- analysis_env.yml provides the python environment used for this analysis. (Requires instalation see below)
+	- ML_env.yml provides the python environment used for this analysis. (Requires instalation see below)
 
 
 Order of Jupyter notebook execution:
