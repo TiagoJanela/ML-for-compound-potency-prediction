@@ -4,6 +4,8 @@
 
 This folder contains scripts to build and analyse ML models. 
 
+Should be downloaded and can be al Jupyter notebooks can be used inside the folder.
+
 The content of the folders is summarized in the following.
 
 Jupyter Notebooks (.ipynb):
