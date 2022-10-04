@@ -19,6 +19,7 @@ from sklearn.svm import SVR, SVC
 from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import ShuffleSplit
+from scipy.spatial.distance import jaccard
 
 from ML_utils import tanimoto_from_sparse
 import warnings
@@ -93,7 +94,8 @@ class MLModel:
                             'min_samples_leaf': [1, 2, 5],
                             }
                 elif self.ml_algorithm == "kNN":
-                    return {"n_neighbors": [1, 3, 5]
+                    return {"n_neighbors": [1, 3, 5],
+                            "metric": [jaccard],
                             }
 
             if self.reg_class == "classification":
