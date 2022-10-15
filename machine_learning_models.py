@@ -21,7 +21,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import ShuffleSplit
 from scipy.spatial.distance import jaccard
 
-from ML_utils import tanimoto_from_sparse
+from ml_utils import tanimoto_from_sparse
 import warnings
 
 warnings.filterwarnings('ignore')
