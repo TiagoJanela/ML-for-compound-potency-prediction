@@ -101,10 +101,10 @@ class MLModel:
                             'kernel': [tanimoto_from_sparse],
                             }
                 elif self.ml_algorithm == "RFC":
-                    return {'n_estimators': [200],
+                    return {'n_estimators': [25, 100, 200],
                             'max_features': ['auto'],
-                            'min_samples_split': [2, 3, 5, 10],
-                            'min_samples_leaf': [1, 2, 5, 10],
+                            'min_samples_split': [2, 3, 5],
+                            'min_samples_leaf': [1, 2, 5],
                             }
 
 
