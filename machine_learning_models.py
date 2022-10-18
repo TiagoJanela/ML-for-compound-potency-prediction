@@ -18,7 +18,6 @@ from sklearn.dummy import DummyRegressor
 from sklearn.svm import SVR, SVC
 from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
-from sklearn.model_selection import ShuffleSplit
 
 from ml_utils import tanimoto_from_sparse
 import warnings
