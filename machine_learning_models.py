@@ -254,7 +254,7 @@ class DNN:
                                    )
 
             # EarlyStopping
-            earlystopping = EarlyStopping(monitor='val_loss', patience=10, verbose=0)
+            earlystopping = EarlyStopping(monitor='val_loss', patience=50, verbose=0)
 
             # Model training and validation
             history = model.fit(self.data.features.toarray(), self.data.labels,
@@ -313,12 +313,12 @@ class DNN:
     def fit_model(self):
 
         # define early stopping object
-        earlystopping = EarlyStopping(monitor='loss', patience=10, verbose=0)
+        earlystopping = EarlyStopping(monitor='loss', patience=50, verbose=0)
 
         # train the model on the entire training set
         best_model = self.model.fit(self.data.features.toarray(), self.data.labels,
                                     batch_size=32,
-                                    epochs=self.best_params['n_epochs'],
+                                    epochs=200,
                                     validation_split=None,
                                     callbacks=[earlystopping],
                                     verbose=0)
