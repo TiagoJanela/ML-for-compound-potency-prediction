@@ -40,6 +40,7 @@ Python scripts (.py):
 (9) Folders:
 	
 	- dataset: stores the compound potency dataset used in this analysis
+		dataset_analysis: Jupyter notebook for the dataset alnalysis
 
 	- ccr_results : stores the CCR algorithm results
 
