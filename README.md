@@ -4,9 +4,9 @@
 
 This folder contains scripts to build and analyse ML models. 
 
-Should be downloaded and all Jupyter notebooks can be used inside the folder.
-
 [![DOI](https://zenodo.org/badge/531872493.svg)](https://zenodo.org/badge/latestdoi/531872493)
+
+Should be downloaded and all Jupyter notebooks can be used inside the folder.
 
 The content of the folders is summarized in the following.
 
