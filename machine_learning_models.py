@@ -329,12 +329,13 @@ class DNN:
 
 
 class Model_Evaluation:
-    def __init__(self, model, data, data_transformer=None, model_id=None, reg_class="regression"):
+    def __init__(self, model, data, data_label, data_transformer=None, model_id=None, reg_class="regression"):
         self.reg_class = reg_class
         self.model_id = model_id
         self.data_transformer = data_transformer
         self.model = model
         self.data = data
+        self.data_labels = data_label
         self.labels, self.y_pred, self.predictions = self.model_predict(data)
         self.pred_performance = self.prediction_performance(data)
 
@@ -342,7 +343,7 @@ class Model_Evaluation:
 
         if self.model_id == 'GCN':
             y_prediction = untransform_data(self.data_transformer.untransform(self.model.predict(data).flatten()))
-            labels = untransform_data(self.data_transformer.untransform(data.y))
+            labels = list(self.data_labels)
 
         elif self.model.ml_algorithm == 'DNN':
             y_prediction = self.model.model.predict(data.features.toarray(), verbose=0).flatten()
