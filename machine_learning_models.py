@@ -362,6 +362,7 @@ class Model_Evaluation:
             predictions['Target ID'] = data.target[0]
             predictions['algorithm'] = self.model.ml_algorithm
 
+
         return labels, y_prediction, predictions
 
     def prediction_performance(self, data, y_score=None, nantozero=False) -> pd.DataFrame:
