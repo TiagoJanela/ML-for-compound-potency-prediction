@@ -21,7 +21,7 @@ from sklearn.svm import SVR, SVC
 from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
 
-from ml_utils import tanimoto_from_sparse
+from ml_utils import tanimoto_from_sparse, untransform_data
 import warnings
 
 warnings.filterwarnings('ignore')
@@ -341,8 +341,8 @@ class Model_Evaluation:
     def model_predict(self, data):
 
         if self.model_id == 'GCN':
-            y_prediction = self.data_transformer.untransform(self.model.predict(data).flatten())
-            labels = self.data_transformer.untransform(data.y)
+            y_prediction = untransform_data(self.data_transformer.untransform(self.model.predict(data).flatten()))
+            labels = untransform_data(self.data_transformer.untransform(data.y))
 
         elif self.model.ml_algorithm == 'DNN':
             y_prediction = self.model.model.predict(data.features.toarray(), verbose=0).flatten()
