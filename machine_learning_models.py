@@ -342,7 +342,7 @@ class Model_Evaluation:
     def model_predict(self, data):
 
         if self.model_id == 'GCN':
-            y_prediction = untransform_data(self.data_transformer.untransform(self.model.predict(data).flatten()))
+            y_prediction = self.data_transformer.untransform(self.model.predict(data).flatten())
             labels = list(self.data_labels)
 
         elif self.model.ml_algorithm == 'DNN':
