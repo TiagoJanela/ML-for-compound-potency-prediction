@@ -50,16 +50,6 @@ def maxminpicker(fp_list, ntopick, seed=None):
     return list(picks)
 
 
-def untransform_data(data):
-    y_predictions = []
-    for y_pred in data:
-        if y_pred < 5:
-            y_predictions.append(5.000000)
-        else:
-            y_predictions.append(y_pred)
-    return y_predictions
-
-
 def create_directory(path: str, verbose: bool = True):
     if not os.path.exists(path):
 
