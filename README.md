@@ -13,7 +13,7 @@ Jupyter Notebooks (.ipynb):
 (1) ml_models: Jupyter notebook with machine and deep learning models (MR, kNN, SVR, RFR, DNN), 
 able to predict compound potency for different datasets (Complete/Random/Diverse sets)
 
-(2) gcn_models: Jupyter notebook with graph neural networks models (GCN), able to predict 
+(2) gcn_models: Jupyter notebook with graph neural networks models (GCN), to predict 
 compound potency for different datasets (Complete/Random/Diverse sets)
 
 (3) ml_models_cluster_potent_sets: Jupyter notebook with machine and deep learning models 
@@ -23,7 +23,7 @@ compound potency for different datasets (Complete/Random/Diverse sets)
 able to predict compound potency for different datasets (Cluster/Potent sets)
 
 (5) data_analysis_figures: Jupyter notebook with a workflow for the data analysis of compound potency 
-predictions from regression models and respective figures generation.
+predictions from regression models.
 
 
 Python scripts (.py):
@@ -52,9 +52,9 @@ Python scripts (.py):
 
 Order of Jupyter notebook execution:
 
-1. (1), (2), (3), (4) should be run first, to generate the model predictions (results).
+1. (1), (2), (3), (4) to generate the model predictions (results). 
 
-2. (5) should be run, afterwards, to generate the respective figures. 
+2. (5) to generate the figures. 
 
 
 
@@ -86,3 +86,4 @@ Requirements:
 - deepchem==2.6.1
 - tqdm=4.64.0
 
+Models output can differ between systems, if different seeds are used, as well as, if the model are trained on CPU/GPU (non-deterministic operations).
