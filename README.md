@@ -85,5 +85,3 @@ Requirements:
 - dgl-cuda11.1=0.8.1
 - deepchem==2.6.1
 - tqdm=4.64.0
-
-Models output can differ between systems, if different seeds are used, as well as, if the model are trained on CPU/GPU (non-deterministic operations).
